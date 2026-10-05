@@ -1,0 +1,15 @@
+{
+  "name": "croppilot-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CropPilotAI - AI-Powered Agriculture Crop Advisory Assistant",
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "migrate": "node supabase/migrate.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
